@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Timer display styles */
+.timer-display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timer-status {
+    font-size: 24px;
+    color: #666;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #76c7c0;
+    width: 0; /* This will be updated dynamically */
+}
+
+/* Control button styles */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary {
+    background-color: #76c7c0;
+    color: white;
+}
+
+.secondary {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.danger {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Settings styles */
+.settings {
+    margin-bottom: 20px;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-setting {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
